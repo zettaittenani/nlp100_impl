@@ -3,10 +3,7 @@
 
 
 def solve(s):
-    ret = ''
-    for i in [*map(lambda x: (x - 1), [1, 3, 5, 7])]:
-        ret += s[i]
-    return ret
+    return s[:8:2]
 
 
 print(solve('パタトクカシーー'))

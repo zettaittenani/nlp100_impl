@@ -9,11 +9,11 @@
 def solve(s):
     splitted = s.split()
     strs = []
-    for s in splitted:
+    for spl in splitted:
         strs.append(
             ''.join([*map(lambda c:
                           chr(219 - ord(c)) if c.islower() else c,
-                          list(s))])
+                          list(spl))])
         )
     return ' '.join(strs)
 

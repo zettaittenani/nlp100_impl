@@ -8,7 +8,8 @@ from operator import add
 
 def char_n_gram(s, n):
     chars = [*(reduce(add, s.split()))]
-    set_list = [*map(lambda x: reduce(add, chars[chars.index(x):(chars.index(x) + n)]), chars)]
+    set_list = [
+        *map(lambda x: reduce(add, chars[chars.index(x):(chars.index(x) + n)]), chars)]
     return set(set_list)
 
 
